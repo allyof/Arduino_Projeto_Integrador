@@ -43,12 +43,14 @@ class Umidade {
 }
 
 // Classe Principal para Exibir os Resultados
-public class SensorSimulador {
+public class SensorSimular {
     public static void main(String[] args) {
         // Valores simulados (substituir com leitura de sensores reais, se necessário)
-        int tempSensor = 512; // Simulado
-        int ldrSensor = 450; // Simulado
-        int umidadeSensor = 650; // Simulado
+        int tempSensor = 512; // Simulado float temp
+        int ldrSensor = 450; // Simulado int ldrValor
+        int umidadeSensor = 650; // Simulado int umidadeValor
+
+        //Para pegar os dados reais, e conectar no arduino utilizar src\SensorConectado.java
 
         // Verificar e exibir resultados uma vez
         System.out.println(Temperatura.verificarTemperatura(tempSensor));
@@ -56,3 +58,6 @@ public class SensorSimulador {
         System.out.println(Umidade.verificarUmidade(umidadeSensor));
     }
 }
+
+
+//https://app.gleek.io/diagrams/rvxKgcJPDzzwDEhkRsAOHA
